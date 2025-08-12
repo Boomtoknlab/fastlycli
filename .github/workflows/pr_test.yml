@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout code"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: "Install Rust"
         uses: dtolnay/rust-toolchain@1.90.0 # to install tq via `make config`
       - name: "Generate static app config"
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout code"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: "Install Rust"
         uses: dtolnay/rust-toolchain@1.90.0 # to install tq via `make config`
       - name: Install Go
@@ -78,7 +78,7 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
       - name: "Checkout code"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: "Install Go"
         uses: actions/setup-go@v5
         with:
@@ -128,7 +128,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout code"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Build docker images
         run: |
           for dockerFile in Dockerfile*; do docker build -f $dockerFile . ; done
