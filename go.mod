@@ -1,8 +1,6 @@
 module github.com/fastly/cli
 
-go 1.23.0
-
-toolchain go1.23.6
+go 1.24.0
 
 require (
 	github.com/Masterminds/semver/v3 v3.3.1
@@ -35,7 +33,7 @@ require (
 	github.com/theckman/yacspin v0.13.12
 	golang.org/x/crypto v0.35.0
 	golang.org/x/exp v0.0.0-20240409090435-93d18d7e34b8
-	golang.org/x/mod v0.23.0
+	golang.org/x/mod v0.28.0
 )
 
 require (
